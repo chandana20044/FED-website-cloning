@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Learning App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>Language Learning App</h1>
+        <div class="language-select">
+            <label for="language">Select a language:</label>
+            <select id="language" onchange="showWords()">
+                <option value="select">--Select--</option>
+                
+                <option value="hindi">Hindi</option>
+                <option value="telugu">Telugu</option>
+                <option value="spanish">Spanish</option>
+                <option value="french">French</option>
+                <option value="german">German</option>
+            </select>
+        </div>
+        <div class="word-list" id="word-list">
+            <!-- Translated words will appear here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
